@@ -1,6 +1,6 @@
 {
   "name": "@thisisbarney/react-map-control",
-  "version": "1.0.7",
+  "version": "0.0.0-development",
   "description": "a component bundle of map control buttons",
   "main": "lib/index.js",
   "files": [
@@ -10,7 +10,9 @@
   "scripts": {
     "prepublish": "node_modules/.bin/babel src --out-dir lib",
     "go": "yarn publish --access=public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\" && exit 0",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "map",
@@ -43,6 +45,12 @@
     "file-loader": "^1.1.5",
     "json-loader": "^0.5.7",
     "mocha": "^4.0.1",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "travis-deploy-once": "^5.0.0",
+    "semantic-release": "^15.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThisIsBarney/react-map-control.git"
   }
 }
